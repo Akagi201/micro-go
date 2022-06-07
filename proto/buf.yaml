@@ -1,1 +1,16 @@
 version: v1
+name: "buf.build/Akagi201/micro-go"
+deps:
+  - buf.build/envoyproxy/protoc-gen-validate
+lint:
+  use:
+    - BASIC
+    - FILE_LOWER_SNAKE_CASE
+  except:
+    - PACKAGE_SAME_DIRECTORY
+    - PACKAGE_DIRECTORY_MATCH
+  allow_comment_ignores: true
+breaking:
+  use:
+    - FILE
+  ignore_unstable_packages: true

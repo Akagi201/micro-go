@@ -1,20 +1,27 @@
-// Copyright 2020-2022 Buf Technologies, Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 package app
 
-// Bar runs bar.
-func Bar() string {
-	return "bar"
+import (
+	"context"
+	"errors"
+	"log"
+
+	apppb "github.com/Akagi201/micro-go/internal/proto/app"
+)
+
+type Server struct {
+	apppb.UnimplementedMicroAppServer
+}
+
+func NewServer() *Server {
+	return &Server{}
+}
+
+// SayHello implements helloworld.GreeterServer
+func (s *Server) SayHello(ctx context.Context, in *apppb.HelloReq) (*apppb.HelloResp, error) {
+	log.Printf("Received: %v", in.GetName())
+	if len(in.Name) == 0 {
+		return nil, errors.New("name cannot be empty")
+	}
+
+	return &apppb.HelloResp{Message: "Hello " + in.Name}, nil
 }

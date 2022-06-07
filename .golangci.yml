@@ -1,14 +1,11 @@
+---
+output:
+  sort-results: true
 run:
   skip-dirs-use-default: false
 linters-settings:
   errcheck:
     check-type-assertions: true
-  forbidigo:
-    forbid:
-      - '^fmt\.Print'
-      - '^log\.'
-      - '^print$'
-      - '^println$'
 linters:
   enable:
     - asciicheck

@@ -2,3 +2,4 @@
 .env/
 .tmp/
 cmd/app/app
+app
