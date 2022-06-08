@@ -1,6 +1,6 @@
 # micro-go
 
-[![ci](https://github.com/Akagi201/micro-go/actions/workflows/ci.yaml/badge.svg)](https://github.com/Akagi201/micro-go/actions/workflows/ci.yaml)
+[![ci](https://github.com/Akagi201/micro-go/actions/workflows/ci.yml/badge.svg)](https://github.com/Akagi201/micro-go/actions/workflows/ci.yml)
 
 micro service framework in Go
 
