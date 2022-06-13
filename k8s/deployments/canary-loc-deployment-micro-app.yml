@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: micro-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: micro-app
+  template:
+    metadata:
+      labels:
+        app: micro-app
+    spec:
+      containers:
+      - name: micro-app
+        image: ghcr.io/akagi201/micro-go:master
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8327

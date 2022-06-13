@@ -15,7 +15,10 @@ micro service framework in Go
 * [grpc](google.golang.org/grpc) - use pure GRPC
 * [req](https://github.com/imroc/req) - http client
 * [errors](https://github.com/cockroachdb/errors) - error handling
-* [ent](https://entgo.io/) - Graph-Based ORM
+* [bun](https://github.com/uptrace/bun) - gorm
+* [sqlc](https://github.com/kyleconroy/sqlc) - no gorm, generate code from sql schema
+* [sqlx](https://github.com/jmoiron/sqlx) - no gorm
+* [sql-migrate](https://github.com/rubenv/sql-migrate) - sql migrate
 * [wire](https://github.com/google/wire) - dependency injection
 * [govvv](https://github.com/ahmetb/govvv)
 * [golangci](https://golangci-lint.run/) - lint tools
