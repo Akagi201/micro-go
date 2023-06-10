@@ -63,3 +63,17 @@ go install github.com/srikrsna/protoc-gen-gotag@latest
 # Usage: goup -v -m ./...
 go install github.com/rvflash/goup@latest
 ```
+
+## Docs
+
+* go mod update all: <https://gosamples.dev/update-all-packages/>
+
+## After upgrade go version
+
+```sh
+go install -v golang.org/x/tools/...@latest
+go install -v google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+go install -v google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install -v github.com/mgechev/revive@latest
+go install -v github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+```
