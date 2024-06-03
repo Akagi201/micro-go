@@ -27,7 +27,13 @@ micro service framework in Go
 * [tableflip](https://github.com/cloudflare/tableflip) - graceful process restart
 * graphql: [rejoiner](https://github.com/google/rejoiner) [gqlgen](https://gqlgen.com/)
 
+## Libs
+
+* <https://github.com/destel/rill> - parallel processing like rayon in rust
+
 ## third-party tools
+
+* <https://github.com/nikolaydubina/go-recipes>
 
 ```sh
 # k8s tool similar to helm  (optional)
