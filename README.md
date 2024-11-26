@@ -30,6 +30,7 @@ micro service framework in Go
 ## Libs
 
 * <https://github.com/destel/rill> - parallel processing like rayon in rust
+* <https://github.com/roblaszczak/vgt> - golang benchmark test
 
 ## third-party tools
 
